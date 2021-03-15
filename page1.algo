@@ -1,0 +1,19 @@
+ALGORITHM insertionSort
+VAR
+    arr:  ARRAY_OF INTEGER;
+    valueToInsert,holePosition: INTEGER;
+    i:INTEGER;
+BEGIN
+ FOR i FROM 0 TO arr.length-1 DO
+    valueToInsert = arr[i];
+      holePosition = i;
+ 
+WHILE (holePosition > 0 and arr[holePosition-1] > valueToInsert) DO
+    A[holePosition] = arr[holePosition-1];
+     holePosition = holePosition -1;
+      END_WHILE
+      arr[holePosition] = valueToInsert;
+      END_FOR
+      WRITE(arr)	;
+      END
+   
